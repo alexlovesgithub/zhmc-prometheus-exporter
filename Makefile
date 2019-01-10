@@ -111,7 +111,7 @@ test: dev-setup install
 .PHONY: lint
 lint: dev-setup
 	@echo "Performing lint tests of $(package_name)..."
-	flake8
+	flake8 zhmc_prometheus_exporter
 	@echo "$@ done."
 
 .PHONY: clean
